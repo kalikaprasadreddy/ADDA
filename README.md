@@ -15,11 +15,11 @@ ENTRYPOINT ["java","-jar","/app.jar"]`
 
 Then build it using the below command to generate the image
 
-`docker build -t kalikaprasadreddy/adda:latest`
+`docker build -t <username>/adda:latest`
 
 Verify the image created, by running it on docker with the following command
 
-`docker run -p 8080:8080 -t kalikaprasadreddy/add:latest`
+`docker run -p 8080:8080 -t <username>/adda:latest`
 
 If everything works as expected, then login to docker using below command
 
@@ -28,7 +28,7 @@ If everything works as expected, then login to docker using below command
 this prompts for Docker password.
 
 Once logged-in, push the image to docker hub
-`docker push -t kalikaprasadreddy/add/latest`
+`docker push -t <username>/adda:latest`
 
 Login to Render(dashboard.render.com) and create a new Web Service. Which asks for Docker Image.
 
